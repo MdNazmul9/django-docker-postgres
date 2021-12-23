@@ -23,4 +23,12 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     container_name: postgres_db
+
+    # # mysql
+    # image: mysql:5.7
+    # environment:
+    #   MYSQL_DATABASE: 'django-app-db'
+    #   MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+    # volumes: 
+    #   - ./data/mysql/dbb:/var/lib/mysql
   
