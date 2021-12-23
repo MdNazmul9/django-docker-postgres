@@ -173,4 +173,52 @@ docker run --publish 8000:8000 python-django
       container_name: postgres_db
     
   ```
+# Django-Docker-MySQL
 
+  ### Dockerfile
+  ```
+  FROM python:3.8
+  ENV PYTHONUNBUFFERED=1
+
+  WORKDIR /django
+  COPY requirements.txt requirements.txt
+  RUN pip3 install -r requirements.txt
+  ```
+  ### docker-compose.yml
+  
+  ```
+  version: '3.8'
+
+  services:
+    app:
+      build: .
+      # path where docker file exists
+      volumes:
+        - .:/django
+        # copy project_dir_to: Dockerfile Working Dir
+      ports:
+        - 8000:8000
+      image: app:django
+      container_name: django_container
+      command: python manage.py runserver 0.0.0.0:8000
+      depends_on:
+        - db
+    db:
+      # image: postgres
+      # volumes: 
+      #   - ./data/db:/var/lib/postgresql/data
+      # environment:
+      #   - POSTGRES_DB=postgres
+      #   - POSTGRES_USER=postgres
+      #   - POSTGRES_PASSWORD=postgres
+      # container_name: postgres_db
+
+      # mysql
+      image: mysql:5.7
+      environment:
+        MYSQL_DATABASE: 'django-app-db'
+        MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+      volumes: 
+        - ./data/mysql/dbb:/var/lib/mysql
+
+  ```
