@@ -33,8 +33,12 @@ docker run --publish 8000:8000 python-django
 ### Docker Basic Info
 ![Docker Basic 1.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/1.1.png)
 ![Docker Basic 1.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/1.2.png)
-![Docker Basic 1.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.1.png)
-![Docker Basic 1.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.2.png)
+![Docker Basic 2.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.1.png)
+![Docker Basic 2.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.2.png)
+![Docker Basic 6.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/6.1.png)
+![Docker Basic 6.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/6.2.png)
+![Docker Basic 6.3 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/6.3.png)
+![Docker Basic 8.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/8.1.png)
 
 
 ## Part-1
